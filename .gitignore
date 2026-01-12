@@ -24,7 +24,7 @@ wheels/
 venv/
 env/
 ENV/
-freakmapper/
+/freakmapper/
 
 # IDEs
 .vscode/
