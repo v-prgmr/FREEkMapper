@@ -1,6 +1,6 @@
-# FREEkmapper
+# FREEkMapper
 
-A powerful projection mapping application built with Python, Tkinter, and OpenGL. Designed for live performance and installation art, Freekmapper allows you to map video and images onto physical surfaces with advanced sequencing and live control capabilities.
+A powerful projection mapping application built with Python, Tkinter, and OpenGL. Designed for live performance and installation art, FREEkMapper allows you to map video and images onto physical surfaces with advanced sequencing and live control capabilities.
 
 ## Features
 
