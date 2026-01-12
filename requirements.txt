@@ -1,0 +1,6 @@
+moderngl
+glfw
+dearpygui
+opencv-python
+numpy
+Pillow

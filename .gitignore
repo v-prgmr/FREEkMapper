@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / Build
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+env/
+ENV/
+freakmapper/
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
+
+# Media / Large Data
+apre ski projection mapping/
+Final Selected/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.jpg
+*.png
+*.npy
