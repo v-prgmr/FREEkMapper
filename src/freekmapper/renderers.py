@@ -23,6 +23,10 @@ class GLTkRenderer(OpenGLFrame):
         self.canvas_width = canvas_width
         self.canvas_height = canvas_height
         
+        self.canvas_height = canvas_height
+        
+        self.context_ready = False
+        
         super().__init__(master, **kwargs)
 
     def initgl(self):
@@ -30,6 +34,7 @@ class GLTkRenderer(OpenGLFrame):
         glEnable(GL_BLEND)
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)
         glClearColor(0.0, 0.0, 0.0, 1.0)
+        self.context_ready = True
 
     def set_size(self, event):
         # Keep track of widget size for viewport and Y-flip mapping
@@ -123,6 +128,9 @@ class GLTkRenderer(OpenGLFrame):
             glEnable(GL_TEXTURE_2D)
 
     def redraw(self):
+        if not self.context_ready:
+            return
+
         # Ensure Tkinter GL context is current
         self.tkMakeCurrent()
         
