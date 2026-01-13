@@ -304,7 +304,8 @@ class ProjectionMapper:
 
             self.opengl_view.after(16, gl_step)  # ~60 FPS
 
-        gl_step()
+        # Delay start of GL loop to ensure window is mapped and context is ready
+        self.root.after(100, gl_step)
 
         # Mouse events on OpenGL widget
         self.opengl_view.bind("<Button-1>", self.on_gl_click)
